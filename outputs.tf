@@ -41,7 +41,7 @@ output "OpenStack_API_Endpoint_ipv6" {
 output "OpenStack_admin_pass" {
   description = "OpenStack Admin User Password"
   value       = random_password.os_admin_password.result
-  sensitive   = true
+  sensitive   = false
 }
 
 output "Horizon_dashboard_via_IP" {
