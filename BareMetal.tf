@@ -41,6 +41,7 @@ resource "equinix_metal_device" "controller" {
 
   operating_system = "ubuntu_18_04"
   plan             = var.equinix_metal_controller_type
+  metro            = var.equinix_metal_metro
   connection {
     host        = self.access_public_ipv4
     type        = "ssh"
@@ -62,6 +63,7 @@ resource "equinix_metal_device" "dashboard" {
 
   operating_system = "ubuntu_18_04"
   plan             = var.equinix_metal_dashboard_type
+  metro            = var.equinix_metal_metro
   connection {
     host        = self.access_public_ipv4
     type        = "ssh"
@@ -82,6 +84,7 @@ resource "equinix_metal_device" "compute-x86" {
 
   operating_system = "ubuntu_18_04"
   plan             = var.equinix_metal_compute-x86_type
+  metro            = var.equinix_metal_metro
   connection {
     host        = self.access_public_ipv4
     type        = "ssh"
@@ -101,6 +104,7 @@ resource "equinix_metal_device" "compute-arm" {
 
   operating_system = "ubuntu_18_04"
   plan             = var.equinix_metal_compute-arm_type
+  metro            = var.equinix_metal_metro
   connection {
     host        = self.access_public_ipv4
     type        = "ssh"

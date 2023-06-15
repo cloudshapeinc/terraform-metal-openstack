@@ -61,3 +61,8 @@ variable "create_dns" {
   default     = false
 }
 
+variable "equinix_metal_metro" {
+  description = "Metro to deploy cluster in"
+  default     = "ny"
+}
+
