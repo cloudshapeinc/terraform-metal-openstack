@@ -9,7 +9,7 @@ equinix_metal_dashboard_type        = "c3.small.x86"
 equinix_metal_compute-arm_type      = "c3.large.arm"
 equinix_metal_compute-x86_type      = "c3.small.x86"
 openstack_compute-arm_count = 0
-openstack_compute-x86_count = 1
+openstack_compute-x86_count = 3
 
 
 # Use an existing project:
