@@ -3,14 +3,11 @@
 #
 # This configuration file will override the defaults in vars.tf
 #
-# c2.medium - 24 Core AMD EPYC 7401p, 64GB, 960GB, 2x10Gbps
-# n2.xlarge - 28 Core Xeon Gold 5120, 384GB, 3.8TB, 4x10Gbps
-# c2.large.arm - 32 Core Ampere eMAG, 128GB, 480GB, 2x10Gbps
 #
-equinix_metal_controller_type       = "c3.medium.x86"
-equinix_metal_dashboard_type        = "c3.medium.x86"
+equinix_metal_controller_type       = "c3.small.x86"
+equinix_metal_dashboard_type        = "c3.small.x86"
 equinix_metal_compute-arm_type      = "c3.large.arm"
-equinix_metal_compute-x86_type      = "c3.medium.x86"
+equinix_metal_compute-x86_type      = "c3.small.x86"
 openstack_compute-arm_count = 0
 openstack_compute-x86_count = 1
 
