@@ -236,7 +236,7 @@ resource "null_resource" "compute-x86-openstack" {
   }
 
   provisioner "file" {
-    content     = data.template_file.CommonServerSetup.rendered
+    content     = data.template_file.ComputeNova.rendered
     destination = "ComputeNova.sh"
   }
 
@@ -286,7 +286,7 @@ resource "null_resource" "compute-arm-openstack" {
   }
 
   provisioner "file" {
-    content     = data.template_file.CommonServerSetup.rendered
+    content     = data.template_file.ComputeNova.rendered
     destination = "ComputeNova.sh"
   }
 
